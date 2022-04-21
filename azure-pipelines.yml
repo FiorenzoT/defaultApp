@@ -24,9 +24,9 @@ jobs:
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          codeCoverageToolOption: JaCoCo
-          codeCoverageClassFilesDirectories: $(SourceDirectory)/target/classes,$(SourceDirectory)/target/test-classes
-          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
+#          codeCoverageToolOption: JaCoCo
+#          codeCoverageClassFilesDirectories: $(SourceDirectory)/target/classes,$(SourceDirectory)/target/test-classes
+#          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
           goals: 'test'
 
       - task: Maven@3
@@ -39,7 +39,7 @@ jobs:
           jdkVersionOption: '1.11'
           jdkArchitectureOption: 'x64'
           publishJUnitResults: false
-          codeCoverageToolOption: JaCoCo
-          codeCoverageClassFilesDirectories: $(SourceDirectory)/target/classes,$(SourceDirectory)/target/test-classes
-          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
+#          codeCoverageToolOption: JaCoCo
+#          codeCoverageClassFilesDirectories: $(SourceDirectory)/target/classes,$(SourceDirectory)/target/test-classes
+#          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
           goals: 'deploy'
