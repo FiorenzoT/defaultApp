@@ -19,4 +19,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>feed</id>
+      <url>https://pkgs.dev.azure.com/fiorenzotittaferrante00/Default/_packaging/feed/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
