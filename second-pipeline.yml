@@ -18,4 +18,4 @@ jobs:
     steps:
     - task: CmdLine@2
       inputs:
-        script: 'echo Execution of main-pipeline.yml'
+        script: 'echo Execution of second-pipeline.yml'
