@@ -29,6 +29,7 @@ jobs:
 #          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
           goals: 'test'
 
+
       - task: Maven@3
         displayName: 'Publish Artifact'
         inputs:
