@@ -7,7 +7,7 @@ pool:
 resources:
   pipelines:
     - pipeline: pipeline          # nome della risorsa pipeline
-      source: azure-pipelines     # nome della pipeline referenziata da qesta risorsa
+      source: azure-pipelines.yml # nome della pipeline referenziata da qesta risorsa
       trigger: true               # esegue questa pipeline ogni volta che quella referenziata termina
 
 jobs:
