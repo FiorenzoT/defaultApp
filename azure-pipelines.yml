@@ -13,7 +13,7 @@ jobs:
   
     steps:
       - checkout: self
-  
+
       - task: Maven@3
         displayName: 'Test defaultApp'
         inputs:
@@ -28,7 +28,6 @@ jobs:
 #          codeCoverageClassFilesDirectories: $(SourceDirectory)/target/classes,$(SourceDirectory)/target/test-classes
 #          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
           goals: 'test'
-
 
       - task: Maven@3
         displayName: 'Publish Artifact'
