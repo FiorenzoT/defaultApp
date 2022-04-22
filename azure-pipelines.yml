@@ -1,5 +1,5 @@
 trigger:
-- develop
+- main
 
 variables:
   BUILD_NUMBER: v$(GitVersion.Major).$(GitVersion.Minor)
