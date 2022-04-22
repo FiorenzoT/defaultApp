@@ -16,6 +16,9 @@ Modificato il pom.xml aggiungendo le seguenti righe:
 
 2.
 
+Risolto "pipeline resource input must be valid" quando attivavo il trigger 
+per far iniziare una pipeline finita un altra. 
 
+Ho cambiato il nome della pipeline dalle impostazioni.
 
 
