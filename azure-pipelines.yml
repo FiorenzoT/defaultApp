@@ -1,3 +1,5 @@
+name: firstPipeline
+
 trigger:
 - main
 
@@ -43,3 +45,5 @@ jobs:
 #          codeCoverageClassFilesDirectories: $(SourceDirectory)/target/classes,$(SourceDirectory)/target/test-classes
 #          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
           goals: 'deploy'
+
+      - template: 2_secondPipeline_template.yml
