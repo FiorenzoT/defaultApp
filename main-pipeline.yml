@@ -1,11 +1,17 @@
+trigger: none
+
 pool:
   vmImage: ubuntu-latest
 
 resources:
   pipelines:
-    - pipeline: pipeline          # nome della risorsa pipeline
+    - pipeline: alias_name  # nome della risorsa pipeline
       source: azure-pipelines     # nome della pipeline referenziata da qesta risorsa
-      trigger: true               # esegue questa pipeline ogni volta che quella referenziata termina
+      project: defaultApp
+      trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
+        branches:
+          include:
+            - develop
 
 jobs:
   - job: JobName
