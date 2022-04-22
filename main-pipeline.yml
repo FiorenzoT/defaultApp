@@ -1,0 +1,18 @@
+trigger:
+- develop
+
+pool:
+  vmImage: ubuntu-latest
+
+resources:
+  pipelines:
+    - pipeline: pipeline          # nome della risorsa pipeline
+      source: azure-pipelines     # nome della pipeline referenziata da qesta risorsa
+      trigger: true               # esegue questa pipeline ogni volta che quella referenziata termina
+
+jobs:
+  - job: JobName
+    steps:
+    - task: CmdLine@2
+      inputs:
+        script: 'echo Execution of main-pipeline.yml'
