@@ -48,7 +48,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<<<<<<< HEAD
 
   <repositories>
     <repository>
@@ -63,8 +62,4 @@
     </repository>
   </repositories>
 
-
-=======
-  
->>>>>>> develop
 </project>
