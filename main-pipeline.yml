@@ -5,7 +5,7 @@ pool:
 
 resources:
   pipelines:
-    - pipeline: pipelineresource  # nome della risorsa pipeline
+    - pipeline: alias_name  # nome della risorsa pipeline
       source: azure-pipelines     # nome della pipeline referenziata da qesta risorsa
       project: defaultApp
       trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
