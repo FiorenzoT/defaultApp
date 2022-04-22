@@ -12,7 +12,7 @@ resources:
       trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
         branches:
           include:
-            - develop
+            - main
 
 jobs:
   - job: JobName
