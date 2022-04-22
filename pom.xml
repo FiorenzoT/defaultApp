@@ -27,7 +27,6 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-
   </repositories>
 
   <groupId>MyGroup</groupId>
@@ -48,5 +47,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+
 </project>

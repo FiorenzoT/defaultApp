@@ -4,6 +4,9 @@ trigger:
 variables:
   BUILD_NUMBER: v$(GitVersion.Major).$(GitVersion.Minor)
 
+variables:
+  BUILD_NUMBER: v$(GitVersion.Major).$(GitVersion.Minor)
+
 pool:
   vmImage: ubuntu-latest
 
