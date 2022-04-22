@@ -5,7 +5,7 @@ pool:
 
 resources:
   pipelines:
-    - pipeline: alias_name  # nome della risorsa pipeline
+    - pipeline: pipelineResource  # nome della risorsa pipeline
       source: first-pipelines     # nome della pipeline referenziata da qesta risorsa
       project: defaultApp
       trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
