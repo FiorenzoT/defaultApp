@@ -3,10 +3,10 @@ pool:
 
 resources:
   pipelines:
-    - pipeline: test          # nome della risorsa pipeline
-      source: 'azure-pipelines'     # nome della pipeline referenziata da qesta risorsa
+    - pipeline: "test"             # nome della risorsa pipeline
+      source: 'azure-pipelines'   # nome della pipeline referenziata da qesta risorsa
       project: defaultApp
-      trigger:                # esegue questa pipeline ogni volta che quella referenziata termina
+      trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
         branches:
           include:
             - develop
