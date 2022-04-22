@@ -6,7 +6,10 @@ resources:
     - pipeline: pipeline          # nome della risorsa pipeline
       source: azure-pipelines     # nome della pipeline referenziata da qesta risorsa
       project: defaultApp
-      trigger: true               # esegue questa pipeline ogni volta che quella referenziata termina
+      trigger:                # esegue questa pipeline ogni volta che quella referenziata termina
+        branches:
+          include:
+            - develop
 
 jobs:
   - job: JobName
