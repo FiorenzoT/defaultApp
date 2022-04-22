@@ -46,4 +46,4 @@ jobs:
 #          codeCoverageSourceDirectories: $(SourceDirectory)/src/main/java,$(SourceDirectory)/src/test
           goals: 'deploy'
 
-      - template: 2_secondPipeline_template.yml
+      - template: main-pipeline.yml
