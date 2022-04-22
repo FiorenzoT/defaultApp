@@ -1,7 +1,7 @@
 name: firstPipeline
 
 trigger:
-- main
+- fix
 
 variables:
   BUILD_NUMBER: v$(GitVersion.Major).$(GitVersion.Minor)
