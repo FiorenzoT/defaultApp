@@ -7,16 +7,16 @@ pool:
 resources:
   pipelines:
     - pipeline: pipelineResource  # nome della risorsa pipeline
-      source: azure-pipelines     # nome della pipeline referenziata da questa risorsa
+      source: first-pipelines     # nome della pipeline referenziata da questa risorsa
       project: defaultApp
       trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
         branches:
           include:
-            - main
+            - develop
 
 jobs:
   - job: JobName
     steps:
     - task: CmdLine@2
       inputs:
-        script: 'echo Execution of main-pipeline.yml'
+        script: 'echo Execution of second-pipeline.yml'
