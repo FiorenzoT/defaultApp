@@ -6,10 +6,10 @@ pool:
 
 resources:
   pipelines:
-    - pipeline: pipelineResource  # nome della risorsa pipeline
-      source: first-pipelines     # nome della pipeline referenziata da questa risorsa
+    - pipeline: pipelineResource  
+      source: first-pipelines     
       project: defaultApp
-      trigger:                    # esegue questa pipeline ogni volta che quella referenziata termina
+      trigger:                   
         branches:
           include:
             - main
